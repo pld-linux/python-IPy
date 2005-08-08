@@ -13,6 +13,7 @@ Source0:	http://c0re.23.nu/c0de/IPy/%{module}-%{version}.tar.gz
 URL:		http://c0re.23.nu/c0de/IPy/
 BuildRequires:	python
 %pyrequires_eq 	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
