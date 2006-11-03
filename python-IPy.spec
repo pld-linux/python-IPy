@@ -9,6 +9,7 @@ Source0:	http://cheeseshop.python.org/packages/source/I/IPy/%{module}-%{version}
 # Source0-md5:	46328d18e7c4c6191a9ba7af7afc3e9e
 URL:		http://software.inl.fr/trac/trac.cgi/wiki/IPy
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-setuptools
 BuildRequires:	rpmbuild(macros) >= 1.174
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
