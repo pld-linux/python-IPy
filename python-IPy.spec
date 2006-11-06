@@ -1,12 +1,12 @@
 %define		module	IPy
 Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Name:		python-%{module}
-Version:	0.51
+Version:	0.52
 Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/I/IPy/%{module}-%{version}.tar.gz
-# Source0-md5:	46328d18e7c4c6191a9ba7af7afc3e9e
+# Source0-md5:	750a19436bc86f89b692c73e74aa2811
 URL:		http://software.inl.fr/trac/trac.cgi/wiki/IPy
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
@@ -34,6 +34,8 @@ python setup.py install \
         --single-version-externally-managed \
 	--optimize=2 \
 	--root $RPM_BUILD_ROOT
+
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
