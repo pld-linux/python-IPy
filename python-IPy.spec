@@ -1,6 +1,6 @@
 %define		module	IPy
 Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
-Summary(pl):	Klasy i narzêdzia do obs³ugi adresów i sieci IPv4 i IPv6
+Summary(pl.UTF-8):   Klasy i narzÄ™dzia do obsÅ‚ugi adresÃ³w i sieci IPv4 i IPv6
 Name:		python-%{module}
 Version:	0.52
 Release:	1
@@ -23,12 +23,12 @@ greatly inspired bei RIPE's Perl module Net::IP's interface but
 doesn't share the Implementation. It doesn't share non-CIDR netmasks,
 so funky stuff lixe a netmask 0xffffff0f can't be done here.
 
-%description -l pl
-Klasa IP pozwala w wygodny sposób analizowaæ i obs³ugiwaæ wiêkszo¶æ
-u¿ywanych notacji zapisu adresów i sieci IPv4 i IPv6. Jest w du¿ej
-czê¶ci zainspirowana interfejsem modu³u Perla RIPE Net::IP, ale nie
-wspó³dzieli z nim implementacji. Nie dzieli masek sieciowych nie-CIDR,
-wiêc zabawne rzeczy typu maska 0xffffff0f s± tutaj niewykonalne.
+%description -l pl.UTF-8
+Klasa IP pozwala w wygodny sposÃ³b analizowaÄ‡ i obsÅ‚ugiwaÄ‡ wiÄ™kszoÅ›Ä‡
+uÅ¼ywanych notacji zapisu adresÃ³w i sieci IPv4 i IPv6. Jest w duÅ¼ej
+czÄ™Å›ci zainspirowana interfejsem moduÅ‚u Perla RIPE Net::IP, ale nie
+wspÃ³Å‚dzieli z nim implementacji. Nie dzieli masek sieciowych nie-CIDR,
+wiÄ™c zabawne rzeczy typu maska 0xffffff0f sÄ… tutaj niewykonalne.
 
 %prep
 %setup -q -n %{module}-%{version}
