@@ -2,12 +2,12 @@
 Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Name:		python-%{module}
-Version:	0.52
-Release:	3
+Version:	0.62
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/I/IPy/%{module}-%{version}.tar.gz
-# Source0-md5:	750a19436bc86f89b692c73e74aa2811
+# Source0-md5:	c0509a7cf4143cd37728b93bac220ba9
 URL:		http://software.inl.fr/trac/trac.cgi/wiki/IPy
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
@@ -34,13 +34,12 @@ więc zabawne rzeczy typu maska 0xffffff0f są tutaj niewykonalne.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
-        --single-version-externally-managed \
+%{__python} setup.py install \
 	--optimize=2 \
 	--root $RPM_BUILD_ROOT
 
@@ -51,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS COPYING
+%doc ChangeLog PKG-INFO README AUTHORS COPYING
 %attr(755,root,root) %{py_sitescriptdir}/*.py[co]
 %{py_sitescriptdir}/*.egg-info
