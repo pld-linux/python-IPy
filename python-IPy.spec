@@ -3,7 +3,7 @@ Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Name:		python-%{module}
 Version:	0.62
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/I/IPy/%{module}-%{version}.tar.gz
