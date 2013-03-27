@@ -2,12 +2,12 @@
 Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Name:		python-%{module}
-Version:	0.75
+Version:	0.80
 Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/I/IPy/%{module}-%{version}.tar.gz
-# Source0-md5:	d56716a3d8c77fe8539b6e90c88010bd
+# Source0-md5:	3ac024861a8ca833b3f041d0fe2ce04c
 URL:		https://github.com/haypo/python-ipy/wiki
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
@@ -50,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog PKG-INFO README AUTHORS COPYING
+%doc ChangeLog README AUTHORS COPYING
 %attr(755,root,root) %{py_sitescriptdir}/*.py[co]
 %{py_sitescriptdir}/*.egg-info
