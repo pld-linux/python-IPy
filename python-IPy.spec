@@ -2,10 +2,6 @@
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
-# NOTES:
-# - 'module' should match the Python import path (first component?)
-# - 'egg_name' should equal to Python egg name
-# - 'pypi_name' must match the Python Package Index name
 %define		module		IPy
 %define		egg_name	IPy
 %define		pypi_name	IPy
@@ -48,8 +44,8 @@ współdzieli z nim implementacji. Nie dzieli masek sieciowych nie-CIDR,
 więc zabawne rzeczy typu maska 0xffffff0f są tutaj niewykonalne.
 
 %package -n python3-%{pypi_name}
-Summary:	-
-Summary(pl.UTF-8):	-
+Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
+Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Group:		Libraries/Python
 Requires:	python3-modules
 
