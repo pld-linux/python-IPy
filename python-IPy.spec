@@ -1,4 +1,5 @@
 # Conditional build:
+%bcond_without	tests   # unit tests
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
@@ -69,10 +70,20 @@ więc zabawne rzeczy typu maska 0xffffff0f są tutaj niewykonalne.
 %build
 %if %{with python2}
 %py_build
+%if %{with tests}
+for test in test/*.py; do
+	PYTHONPATH=build-2 %{__python} "$test"
+done
+%endif
 %endif
 
 %if %{with python3}
 %py3_build
+%if %{with tests}
+for test in test/*.py; do
+	PYTHONPATH=build-3 %{__python3} "$test"
+done
+%endif
 %endif
 
 %install
