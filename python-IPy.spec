@@ -10,7 +10,7 @@ Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Name:		python-%{pypi_name}
 Version:	1.00
-Release:	5
+Release:	6
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://pypi.debian.net/IPy/%{module}-%{version}.tar.gz
