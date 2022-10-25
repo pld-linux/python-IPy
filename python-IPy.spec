@@ -9,12 +9,12 @@
 Summary:	Class and tools for handling of IPv4 and IPv6 addresses and networks
 Summary(pl.UTF-8):	Klasy i narzędzia do obsługi adresów i sieci IPv4 i IPv6
 Name:		python-%{pypi_name}
-Version:	1.00
-Release:	6
+Version:	1.01
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://pypi.debian.net/IPy/%{module}-%{version}.tar.gz
-# Source0-md5:	1a90c68174234672241a7e60c7ea0fb9
+# Source0-md5:	d6cf83e7f418ebbd23324ba1c658b907
 URL:		https://github.com/haypo/python-ipy/wiki
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -117,7 +117,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README.rst AUTHORS COPYING
 %{py_sitescriptdir}/%{module}.py*
-%{py_sitescriptdir}/%{egg_name}-%{version}-py*.egg-info
+%{py_sitescriptdir}/%{egg_name}-*-py*.egg-info
 %endif
 
 %if %{with python3}
@@ -126,5 +126,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README.rst AUTHORS COPYING
 %{py3_sitescriptdir}/%{module}.py*
 %{py3_sitescriptdir}/__pycache__/%{module}.*.pyc
-%{py3_sitescriptdir}/%{egg_name}-%{version}-py*.egg-info
+%{py3_sitescriptdir}/%{egg_name}-*-py*.egg-info
 %endif
